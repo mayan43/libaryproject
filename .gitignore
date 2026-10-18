@@ -17,3 +17,4 @@ ENV/
 **/migrations
 .DS_Store
 .history
+djangoenv/
