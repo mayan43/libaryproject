@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 8 - Task 7</title>
+</head>
+<body>
+    <h1>Number of Students in Each City</h1>
+    <table border="1">
+        <tr>
+            <th>City</th>
+            <th>Number of Students</th>
+        </tr>
+        {% for addr in students_per_city %}
+        <tr>
+            <td>{{ addr.city }}</td>
+            <td>{{ addr.num_students }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="2">No data found.</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
